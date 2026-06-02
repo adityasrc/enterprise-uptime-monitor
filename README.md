@@ -30,11 +30,11 @@ This project implements a fully automated DevOps pipeline using **(Docker + Mave
 1. Clone the repository: `git clone https://github.com/yourusername/enterprise-uptime-monitor.git`
 2. Build the project: `mvn clean package`
 3. Run the application: `java -jar target/docker-maven-demo-1.0-SNAPSHOT.jar`
-4. Access the dashboard at `http://localhost:8080`
+4. Access the dashboard at `http://localhost:3001`
 
 ### Running with Docker
 1. Build the image: `docker build -t uptime-monitor:latest .`
-2. Run the container: `docker run -p 8080:8080 uptime-monitor:latest`
+2. Run the container: `docker run -p 3001:3001 uptime-monitor:latest`
 
 ## Repository Structure
 * `src/main/java/` - Core monitoring and server logic

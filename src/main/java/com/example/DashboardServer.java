@@ -15,7 +15,7 @@ public class DashboardServer {
     }
 
     public void start() throws Exception {
-        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(3001), 0);
         
         // Serve JSON Data
         server.createContext("/status", exchange -> {
@@ -44,6 +44,6 @@ public class DashboardServer {
         
         server.setExecutor(null);
         server.start();
-        System.out.println("Live Dashboard running on http://localhost:8080");
+        System.out.println("Live Dashboard running on http://localhost:3001");
     }
 }

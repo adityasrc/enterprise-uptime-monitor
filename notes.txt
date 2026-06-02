@@ -1,0 +1,8 @@
+docker build -t health-monitor .
+
+docker run -d -p 3001:3001 --name my_health_monitor health-monitor
+
+// Note: The port was changed to 3001 to avoid conflict with another container on 8080.
+//for backup 
+java -jar target\docker-maven-demo-1.0-SNAPSHOT.jar
+
